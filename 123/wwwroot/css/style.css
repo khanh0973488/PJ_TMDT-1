@@ -1,0 +1,103 @@
+/* Top bar */
+.top-bar {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-info i {
+    font-size: 18px;
+  }
+  
+  .contact-info span {
+    font-size: 16px;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    color: #ff1493;
+    font-size: 24px;
+  }
+  
+  .logo p {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .user-cart {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .user-cart i {
+    font-size: 24px;
+  }
+  
+  /* Main menu */
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  
+  .main-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+  }
+  
+  .main-menu ul li {
+    display: inline;
+  }
+  
+  .main-menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .main-menu ul li a.highlight {
+    color: red;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  .search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .icon-search, .icon-facebook, .icon-phone, .icon-cart, .icon-user {
+    /* Add appropriate icon classes (e.g., FontAwesome) */
+    font-family: "FontAwesome";
+  }
+  
