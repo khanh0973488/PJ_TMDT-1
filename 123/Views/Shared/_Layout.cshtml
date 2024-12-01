@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/_123.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="/css/style.css">
-
+    <!-- Thêm liên kết tới Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <header>
   <div class="top-bar">
-    <div class="contact-info">
-      <i class="icon-search"></i>
-      <i class="icon-facebook"></i>
-      <i class="icon-phone"></i>
-      <span>0976534850</span>
-    </div>
+    
+      <div class="social text-gray">
+        <!-- Thêm class icon đúng với Font Awesome -->
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fas fa-phone-alt"></i></a>       
+        <span>0976534850</span>
+      </div>
     <div class="logo">
-      <img src="~/images/HanDK.png" alt="Logo">
+      <img src="~/images/HanDK-removebg.png" alt="Logo">
     </div>
     <div class="user-cart">
-      <i class="icon-cart"></i>
-      <i class="icon-user"></i>
+      <!-- Thêm các icon giỏ hàng và người dùng -->
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-user"></i>
     </div>
   </div>
   
@@ -33,18 +35,17 @@
     <ul>
       <li><a href="#">Trang chủ</a></li>
       <li><a href="#">Danh mục</a></li>
-      <li><a href="#">Thông tin</a></li>
+      <li><a href="@Url.Action("thongtin", "Home")">Thông tin</a></li>
       <li><a href="#" class="highlight">Khuyến mãi</a></li>
       <li><a href="#">HanDK</a></li>
     </ul>
     <div class="search-bar">
       <input type="text" placeholder="Tìm kiếm...">
-      <button><i class="icon-search"></i></button>
+      <button><i class="fas fa-search"></i></button>
     </div>
   </nav>
 </header>
 
-    </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

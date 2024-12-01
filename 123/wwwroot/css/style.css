@@ -6,6 +6,27 @@
     align-items: center;
     padding: 10px 20px;
   }
+  .social i {
+    margin-left: 20px; /* Di chuyển các icon sang phải */
+}
+
+/* Tùy chỉnh riêng cho icon Facebook và điện thoại */
+.social .fa-facebook-f {
+    margin-left: 20px; /* Khoảng cách từ cạnh trái của icon Facebook */
+}
+
+.social .fa-phone-alt {
+    margin-left: 20px; /* Khoảng cách từ cạnh trái của icon điện thoại */
+}
+.user-cart i {
+  margin-left: 20px; /* Di chuyển các icon sang phải */
+}
+.user-cart .icon-user{
+  margin-right: 100px; /* Khoảng cách từ cạnh trái của icon Facebook */
+}
+.user-cart .icon-cart{
+  margin-right: 200px; /* Khoảng cách từ cạnh trái của icon Facebook */
+}
   
   .contact-info {
     display: flex;
@@ -26,7 +47,10 @@
   }
   
   .logo img {
-    height: 50px;
+    max-height: 100%; /* Chiều cao tối đa của logo sẽ bằng chiều cao của phần header */
+    max-width: 100px; /* Đặt giới hạn chiều rộng tối đa cho logo, bạn có thể điều chỉnh con số này */
+    height: auto; /* Giữ tỉ lệ gốc của logo */
+    width: auto;  /* Đảm bảo không bị thay đổi tỉ lệ logo */
   }
   
   .logo h1 {
